@@ -19,8 +19,11 @@ with st.sidebar:
     st.subheader("Conversation History")
     if st.session_state.conversation:
         for i, chat in enumerate(st.session_state.conversation):
+            # Limit the answer to 100 characters
+            truncated_answer = chat['answer'][:100] + "..." if len(chat['answer']) > 100 else chat['answer']
+            
             st.markdown(f"**Q{i+1}:** {chat['question']}")
-            st.markdown(f"**A{i+1}:** {chat['answer']}")
+            st.markdown(f"**A{i+1}:** {truncated_answer}")
             st.markdown("---")
     else:
         st.write("No history yet.")
