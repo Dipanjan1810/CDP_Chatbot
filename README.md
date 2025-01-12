@@ -38,8 +38,10 @@ Built with [Streamlit](https://streamlit.io/) for an interactive interface.
 
 1. **Clone the Repository**:
 Clone the project to your local machine:
-git clone https://github.com/Dipanjan1810/CDP_Chatbot.git
-cd support-agent-chatbot
+```bash
+   git clone https://github.com/not-indro/support-agent-chatbot.git
+   cd support-agent-chatbot
+   ```
 Step 2: Set Up a Virtual Environment
 Create and activate a virtual environment:
 
