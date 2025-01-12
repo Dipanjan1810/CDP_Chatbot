@@ -56,52 +56,52 @@ Install Required Dependencies
    pip install -r requirements.txt
    ```
 
-Step 3: Install Required Dependencies
-Install Required Dependencies
+4. **Set Up Environment Variables**:
+   - Set up a .env file in the project's root directory and include your Groq API key:
+     ```plaintext
+     GROQ_API_KEY=your_groq_api_key_here
+     ```
+   - Copy the same API key and paste it into the **secrets.toml** file in the *.streamlit* folder.
 
+---
 
-Copy code
-pip install -r requirements.txt
-Step 4: Configure Environment Variables
-Set up a .env file in the project's root directory and include your Groq API key:
+## Usage
 
-plaintext
-Copy code
-GROQ_API_KEY=your_groq_api_key_here
-Usage
-Step 1: Scrape Documentation
+### Step 1: Scrape Documentation
 Run the scraping script to gather information from the official documentation of the four CDPs:
+```bash
+python doc_scraping.py
+```
+This generates a docs.json file containing the extracted documentation after scraping.
 
-
-Copy code
-python scrape_docs.py
-This generates a cdp_docs.json file containing the extracted documentation.
-
-Step 2: Launch the Chatbot
+### Step 2: Launch the Chatbot
 Start the chatbot interface by running the Streamlit application:
-
-
-Copy code
+```bash
 streamlit run app.py
-Step 3: Interact with the Chatbot
-Type your query into the text input field and press Submit.
-The chatbot will analyze the documentation and provide a relevant answer.
-A history of the last three questions and answers will be displayed in the sidebar.
-Project Structure
+```
 
-Copy code
+### Step 3: Interact with the Chatbot
+- Type your query into the text input field and press **Submit**.
+- The chatbot will analyze the documentation and provide a relevant answer.
+- A history of the last three questions and answers will be displayed in the sidebar.
+
+
+## Project Structure
+
+```
 support-agent-chatbot/
 │
 ├── app.py                # Streamlit app for the chatbot interface
 ├── chatbot.py            # Chatbot logic powered by the Groq API
-├── scrape_docs.py        # Web scraping script to collect documentation
-├── cdp_docs.json         # Generated JSON file containing documentation data
+├── doc_scraping.py        # Web scraping script to collect documentation
+├── docs.json         # Generated JSON file containing documentation data
 ├── .env                  # File to store environment variables
 ├── requirements.txt      # Dependencies for the project
 └── README.md             # Documentation for the project
+```
 
+## Acknowledgments
 
-Acknowledgments
-Special thanks to Playwright for web automation.
-Gratitude to Groq for providing an advanced LLM API.
-Appreciation to Streamlit for the user-friendly interface.
+- Special thanks to [Playwright](https://playwright.dev/) for web automation.
+- Gratitude to [Groq](https://groq.com/) for providing an advanced LLM API.
+- Appreciation to [Streamlit](https://streamlit.io/) for the user-friendly interface.
