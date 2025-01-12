@@ -1,43 +1,44 @@
-Support Agent Chatbot
-A chatbot designed to assist with "how-to" questions related to four Customer Data Platforms (CDPs): Segment, mParticle, Lytics, and Zeotap. This chatbot references the official documentation of these platforms to provide accurate guidance on tasks and solutions.
+**Support Agent Chatbot**
 
-Features
-Respond to "How-to" Queries:
+A chatbot designed to assist with "how-to" questions related to four **Customer Data Platforms (CDPs)**: **Segment**, **mParticle**, **Lytics**, and **Zeotap**. This chatbot references the official documentation of these platforms to provide accurate guidance on tasks and solutions.
 
-Provides detailed responses to questions about using features or completing tasks within each CDP.
-Example: "How can I add a new source in Segment?"
-Information Extraction from Documentation:
+## Features
 
-Retrieves and utilizes relevant details from the official documentation of the specified CDPs.
-Question Variability Support:
+- **Respond to "How-to" Queries**:
+    - Provides detailed responses to questions about using features or completing tasks within each CDP.
+    - Example: "How can I add a new source in Segment?"
 
-Understands different ways questions might be phrased, including longer or less specific queries.
-Cross-CDP Feature Comparisons:
+- **Information Extraction from Documentation**:
+  - Retrieves and utilizes relevant details from the official documentation of the specified CDPs.
 
-Answers questions comparing functionalities or workflows across the four platforms.
-Example: "What are the differences between audience creation in Segment and Lytics?"
-Advanced Platform-Specific Guidance:
+- **Question Variability Support**:
+  - Understands different ways questions might be phrased, including longer or less specific queries.
 
-Handles detailed or unique "how-to" queries for specific platforms.
-Example: "How do I set up data integration with Zeotap?"
-Technologies Used
-Web Scraping:
-Utilizes Playwright for dynamic content and BeautifulSoup for static content.
-Natural Language Processing:
-Powered by the Groq API (llama-3.3-70b-versatile).
-Web Framework:
-Built with Streamlit for an interactive interface.
-Programming Language:
-Developed using Python.
-Data Storage:
-Stores scraped documentation in JSON format.
-Installation
-Step 1: Clone the Repository
+**Cross-CDP Feature Comparisons**:
+  - Answers questions comparing functionalities or workflows across the four platforms.
+  - Example: "What are the differences between audience creation in Segment and Lytics?"
+
+- **Advanced "How-to" Questions**:
+  - Handles detailed or unique "how-to" queries for specific platforms.
+  Example: "How do I set up data integration with Zeotap?"
+
+
+## Technologies Used
+
+- **Web Scraping**:
+Utilizes [Playwright](https://playwright.dev/) for dynamic content and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) for static content.
+- **Natural Language Processing**:
+Powered by the [Groq API](https://groq.com/) (`llama-3.3-70b-versatile`).
+- **Web Framework**:
+Built with [Streamlit](https://streamlit.io/) for an interactive interface.
+- **Programming Language**: Python.
+- **Data Storage**: Stores scraped documentation in JSON format.
+
+## Installation
+
+1. **Clone the Repository**:
 Clone the project to your local machine:
-
-
-Copy code
-git clone https://github.com/not-indro/support-agent-chatbot.git
+git clone https://github.com/Dipanjan1810/CDP_Chatbot.git
 cd support-agent-chatbot
 Step 2: Set Up a Virtual Environment
 Create and activate a virtual environment:
@@ -89,8 +90,7 @@ support-agent-chatbot/
 ├── .env                  # File to store environment variables
 ├── requirements.txt      # Dependencies for the project
 └── README.md             # Documentation for the project
-License
-This project is distributed under the MIT License. For more details, refer to the LICENSE file.
+
 
 Acknowledgments
 Special thanks to Playwright for web automation.
