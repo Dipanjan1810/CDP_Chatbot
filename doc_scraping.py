@@ -97,7 +97,7 @@ def save_docs_to_json():
         print(f"Scraping {platform} documentation...")
         docs[platform] = scrape_documentation(url, platform)
     
-    with open("cdp_docs.json", "w") as f:
+    with open("docs.json", "w") as f:
         json.dump(docs, f, indent=4)
 
 if __name__ == "__main__":
