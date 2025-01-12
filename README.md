@@ -42,15 +42,22 @@ Clone the project to your local machine:
    git clone https://github.com/not-indro/support-agent-chatbot.git
    cd support-agent-chatbot
    ```
-Step 2: Set Up a Virtual Environment
+
+2. **Set Up a Virtual Environment**:
 Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
 
+3. **Install Required Dependencies**:
+Install Required Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Copy code
-python3 -m venv venv
-source venv/bin/activate  # For Windows: use `venv\Scripts\activate`
 Step 3: Install Required Dependencies
-Install all the necessary Python libraries:
+Install Required Dependencies
 
 
 Copy code
